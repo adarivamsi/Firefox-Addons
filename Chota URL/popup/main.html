@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+		<style>
+		form{
+			width:100%;
+			background-color: gray;
+		}
+			.center{
+			text-align: center;
+			border: 2px solid blue;
+			margin-left:525px;
+			margin-right:525px;
+			background-color: #53F1F1;
+			}
+			.button {
+			  display: inline-block;
+			  border-radius: 4px;
+			  background-color: #f4511e;
+			  border: none;
+			  color: #FFFFFF;
+			  text-align: center;
+			  font-size: 50px;
+			  padding: 20px;
+			  width: 200px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			}
+			.btn:hover{
+			color: white;
+			background-color: blue;
+			border-radius: 3px;
+			box-shadow: 0 2px #999;
+			}
+			.txt{
+			border:2px solid blue;
+			}
+			.pop{
+			text-align: center;
+			border: 2px solid black;
+			margin-left:525px;
+			margin-right:525px;
+			background-color: 53F1F1;
+			}
+		</style>
+
+	</head>
+	<body>
+	<div class="center" id ="first">
+	<form>
+		<br>
+		<b>Enter URL: </b><input type = "text" name = "URLvalue" class = "txt" id ="URLval"> <br>
+		</br>
+
+		<input type = "button" name = "submitValue" value = "Submit" class = "btn" onclick="showDiv()" />
+	</form>
+	</div>
+	<div class="pop" id="second" style="border:1px solid red;">
+		<b>CONGRATS.!! </br>
+	A Chota URL has been created.!! <br> <br>
+		The Chota URL is <!--The url comes here-->
+    <p id ="chotaURLValue"></p></b> </br>
+	</div>
+<script src = "../script/jquery-3.2.1.min.js"></script>
+	<script src = "../script/background.js"></script>
+
+	</script>
+	</body>
+</html>
